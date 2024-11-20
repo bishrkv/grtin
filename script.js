@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 
     // Limit to last 10 credentials
-    if (recentCredentials.length > 10) {
+    if (recentCredentials.length > 100) {
         recentCredentials.shift(); // Remove the oldest entry
     }
 
