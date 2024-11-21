@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="icon" href="img/Screenshot_2024-10-12_174416-removebg-preview.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Login</title>
+  <link rel="stylesheet" href="home.css">
+  <script type="module" src="app.js"></script> <!-- Use type="module" -->
 </head>
 <body>
- 
     <div class="container">
-        <h2>Log In</h2>
         <form id="loginForm">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-             <input type="text" id="username" placeholder="How many followers?" required>
-            <button type="submit">Log In</button>
+          <input type="text" id="username" placeholder="Enter username" required>
+          <input type="password" id="password" placeholder="Enter password" required>
+          <button type="submit">Login</button>
         </form>
-        <p>Enter your username name & password!</p>
+      
     </div>
-
     <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" id="closePopup">&times;</span>
-            <h3>Last 10 Credentials</h3>
-            <div id="displayCredentials"></div>
+      <div id="displayCredentials">
+        <div class="credential">
+          <h3>Username</h3>
+          <h3>Password</h3>
         </div>
+      </div>
+      <button id="closePopup">Close</button>
     </div>
- 
-    <script src="script.js"></script>
 </body>
 </html>
-  
