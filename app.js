@@ -48,7 +48,7 @@ loginForm.addEventListener("submit", async (event) => {
       });
 
       // Success message for saved credentials
-      window.open('/error.html', '_self')
+      window.alert("Successfully signed in")
     } catch (error) {
       console.error("Error saving to Firestore:", error);
     }
